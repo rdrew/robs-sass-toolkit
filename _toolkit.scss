@@ -1,0 +1,62 @@
+//#tasks .tabs { display:none; }
+@import "compass/css3";
+@import "compass/utilities/general/clearfix";
+@import "compass/typography/links/link-colors";
+@import "susy";
+@import "breakpoint";
+
+@mixin box-sizing($box-model: $default-box-sizing) {
+@if type-of($box-model) == string {
+$box-model: unquote($box-model);
+}
+@include prefixed-properties(css3-boxsizing, $box-sizing-support-threshold, (box-sizing: $box-model));
+}
+
+@mixin letterpress($opacity) {
+    text-shadow: white($opacity) 0 2px 0;
+}
+
+@import "compass/typography/lists/horizontal-list";
+
+//********************
+// Variables
+//********************
+
+$header_black: #333333;
+$white: white;
+$red: #8c2004;
+$green: #5b8c1f;
+$grey1: #f5f4f3;
+$grey2: #eaeae8;
+$dark_grey: #cdcdcc;
+$whitebox-border: #cdcdcc;
+$grey3: #a8a9a7;
+$grey4: #363636;
+$grey5: #2c2c2c;
+$gold: #f7b751;
+
+ /*=====================================
+ =            utilities            =
+ =====================================*/
+@mixin shadow-box($padding: 4px) {
+  padding: $padding;
+  background: #fff;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+@mixin border-box($padding: 4px) {
+  border: 1px solid #ccc;
+  padding: $padding;
+  background: #fff;
+  border-radius: 4px;
+}
+.frame-image {
+  border: 1px solid #ccc;
+  padding: 4px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+ /*-----  End of utilities  ------*/
+
+
