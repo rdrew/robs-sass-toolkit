@@ -18,8 +18,8 @@ require 'breakpoint'
 http_path = "/"
 css_dir = "../"
 sass_dir = "/"
-images_dir = "../images"
-javascripts_dir = "../javascripts"
+images_dir = "../../images"
+javascripts_dir = "../../js"
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
